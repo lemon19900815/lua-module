@@ -24,7 +24,9 @@ local IniReader = require('IniReader')
 local ini_reader = IniReader:New()
 
 if ini_reader:Open('file.ini') then
+
     print(ini_reader:GetString('ORG', 'Name')) -- buerjia
+    
     print(ini_reader:GetInt('ORG', 'ID')) -- 1001
     
     -- 不存在的key
