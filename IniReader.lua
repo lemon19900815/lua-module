@@ -66,7 +66,7 @@ function IniReader:GetInt(section, key)
 end
 
 function IniReader:GetString(section, key)
-    return (self.cfg_data_[section] or {})[key] or ''
+    return (self.cfg_data_[section] or {})[key]
 end
 
 return IniReader
